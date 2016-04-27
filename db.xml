@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema
+        xmlns="http://www.concrete5.org/doctrine-xml/0.5"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.concrete5.org/doctrine-xml/0.5 http://concrete5.github.io/doctrine-xml/doctrine-xml-0.5.xsd">
+    <table name="atRadioButtonSettings">
+        <field name="akID" type="integer" size="10">
+            <unsigned/>
+            <key/>
+        </field>
+        <field name="akRadioButtonOptionDisplayOrder" type="string" size="255">
+            <default value="display_asc"/>
+            <notnull/>
+        </field>
+    </table>
+    <table name="atRadioButtonOptions">
+        <field name="ID" type="integer" size="10">
+            <unsigned/>
+            <autoincrement/>
+            <key/>
+        </field>
+        <field name="akID" type="integer" size="10">
+            <unsigned/>
+        </field>
+        <field name="value" type="string" size="255"></field>
+        <field name="displayOrder" type="integer" size="10">
+            <unsigned/>
+        </field>
+        <index name="akID">
+            <col>akID</col>
+            <col>displayOrder</col>
+        </index>
+        <index name="value">
+            <col>value</col>
+        </index>
+    </table>
+    <table name="atRadioButtonOptionsSelected">
+        <field name="avID" type="integer" size="10">
+            <unsigned/>
+            <key/>
+        </field>
+        <field name="atRadioButtonOptionID" type="integer" size="10">
+            <unsigned/>
+            <key/>
+        </field>
+        <index name="atRadioButtonOptionID">
+            <col>atRadioButtonOptionID</col>
+        </index>
+    </table>
+</schema>

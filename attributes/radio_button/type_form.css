@@ -1,0 +1,15 @@
+#attributeValuesWrap {margin-top:4px; width: 100%}
+#attributeValuesWrap .akRadioButtonValueWrap{ margin-bottom:2px; border:1px solid #eee; padding:15px 20px;}
+#attributeValuesWrap .akRadioButtonValueWrap:hover{border:1px solid #ddd; }
+#attributeValuesWrap .akRadioButtonValueWrap .leftCol{float:left; width: 75%; }
+#attributeValuesWrap .akRadioButtonValueWrap .rightCol{float:right; text-align:right; width: 25%; }
+#attributeValuesWrap .akRadioButtonValueWrap .rightCol .btn {margin-bottom: 10px; }
+
+#addAttributeValueWrap{ margin-top:8px }
+#addAttributeValueWrap input.faint{ color:#999 }
+#addAttributeValueWrap a{cursor:pointer}
+#attributeValuesWrap .ccm-spacer { clear: both; height: 0px; }
+#allowOtherValuesWrap{margin-top:16px}
+
+
+.akRadioButtonValueWrapSortable:hover {cursor: move}

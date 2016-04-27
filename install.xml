@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<concrete5-cif version="1.0">
+    <attributetypes>
+        <attributetype handle="radio_button" package="attribute_radio_button">
+            <categories>
+                <category handle="collection"/>
+            </categories>
+        </attributetype>
+    </attributetypes>
+</concrete5-cif>
