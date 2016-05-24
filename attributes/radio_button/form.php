@@ -7,7 +7,9 @@
 	$form = Core::make('helper/form');;
 	$options = array();
 	foreach($controller->getOptions() as $option) {
+		echo '<div class="clearfix">';
 		$options[$option->getRadioButtonAttributeOptionID()] = $option->getRadioButtonAttributeOptionDisplayValue();
         echo $form->radio($view->field('atRadioButtonOptionValue'), $option->getRadioButtonAttributeOptionID(), $selectedRadioButtonOptions[0]);
-        echo ' <label>' . $option->getRadioButtonAttributeOptionDisplayValue() . '</label> &nbsp;&nbsp;&nbsp;&nbsp;';
+        echo '&nbsp;'.$form->label('', $option->getRadioButtonAttributeOptionDisplayValue());
+		echo '</div>';
 	}
